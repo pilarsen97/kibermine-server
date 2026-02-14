@@ -43,5 +43,5 @@ Invincible: # Время неуязвимости после телепорта�
 Potions: # Список эффектов: `/rtp info potion_effects`
   Enabled: true
   Types: # Формат: <эффект>:[длительность_в_тиках]:[уровень]
-    - Blindness:60:1 # Слепота
-    - Invisibility:60:1 # Невидимость
+    - Blindness:60:1
+    - Invisibility:60:1

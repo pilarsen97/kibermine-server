@@ -27,3 +27,4 @@ config/waila/waila_plugins.json5
 
 # Disabled plugins
 plugins/disabled/
+/plugins/SkinsRestorer/skins
