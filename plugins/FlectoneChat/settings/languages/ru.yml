@@ -137,8 +137,7 @@ default:
 
   auto-message:
     message:
-      - "&&1Наш дискорд &&2https://discord.gg/KGZZpjeErq "
-      - "&&1Наш сайт &&2В РАЗРАБОТКЕ "
+      - "&&1Наш сайт &&2kibermine.ru "
 
   commands:
     null-player: "#ff4e4e⁉ Игрок не найден"
