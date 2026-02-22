@@ -25,6 +25,9 @@ usernamecache.json
 plugins/SkinsRestorer/recommendations.json
 config/waila/waila_plugins.json5
 
+# Local tool configs
+.mcp.json
+
 # Client modpack builds
 /builds
 
