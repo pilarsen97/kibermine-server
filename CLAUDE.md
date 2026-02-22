@@ -37,6 +37,9 @@ Place `.jar` in `/plugins/`, restart server — See [Mods & Plugins](docs/CLAUDE
 **Q: How to view logs?**
 `sudo journalctl -u minecraft -f` — See [Deployment](docs/CLAUDE-deployment.md#systemd-commands-production)
 
+**Q: What in-game commands are available?**
+See [Commands](docs/game-guides/commands.md) — user & admin commands reference
+
 ## Documentation Index
 
 | Category | Document | Description |
@@ -47,6 +50,7 @@ Place `.jar` in `/plugins/`, restart server — See [Mods & Plugins](docs/CLAUDE
 | **Content** | [Mods & Plugins](docs/CLAUDE-mods-plugins.md) | Adding and configuring mods/plugins |
 | **Reference** | [monitoring.md](docs/monitoring.md) | Detailed Prometheus + Grafana setup |
 | **Reference** | [loki-setup.md](docs/loki-setup.md) | Loki installation & troubleshooting |
+| **Game Guide** | [Commands](docs/game-guides/commands.md) | In-game commands (user & admin) |
 
 ---
 
