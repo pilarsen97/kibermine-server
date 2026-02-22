@@ -25,6 +25,9 @@ usernamecache.json
 plugins/SkinsRestorer/recommendations.json
 config/waila/waila_plugins.json5
 
+# Client modpack builds
+/builds
+
 # Disabled plugins
 plugins/disabled/
 /plugins/SkinsRestorer/skins
