@@ -32,35 +32,40 @@
 Default:
   Description:
   - |-
-    &aA Minecraft Server.
-    &7Now with [&a&lPvP&7], [&a&lMinigames&7], and much more!
+    &#55ff55&lKIBER&#00cc88mine&#aaaaaa.ru &8| &#aaaaaa1.20.1 Forge+Bukkit
+    &#ffcc00Сервер проекта &lKIBERmax.com
   - |-
-    &aA Minecraft Server.
-    &eNow running the latest &lMinecraft &eversion!
-  - |-
-    &a&#45bf55A Minecraft &#0288d1Server.
-    &e%gradient#ffbe00#f4511e%Now with RGB colors. Nice!%gradient%
+    &#55ff55&lKIBER&#00cc88mine&#aaaaaa.ru &8| &#aaaaaaMohist 1.20.1
+    &#ffcc00Сервер проекта &lKIBERmax.com
   Players:
     Hover:
     - |-
-      &aWelcome to &lA Minecraft Server&a!
-      &aCurrently &e&l%online%/%max% &aplayers are playing on our server!
+      &#55ff55&lKIBERmine.ru &8— &#aaaaaaСервер проекта KIBERmax.com
+      &7Онлайн: &a%online%&7/&a%max%
+      &r
+      &#ffcc00Моды: &fMekanism, AE2, Alex's Mobs
+      &#55ccffГолосовой чат: &fSimple Voice Chat
+      &#cc88ffЭкономика: &fLightman's Currency
+  Favicon:
+    Helm:
+    - &#random_player%
 Personalized:
   Description:
   - |-
-    &aA Minecraft Server. &7|  &eHello, &l%player%!
-    &7Now with [&a&lPvP&7], [&a&lMinigames&7], and much more!
+    &#55ff55&lKIBER&#00cc88mine&#aaaaaa.ru &8| &#ffcc00С возвращением, &l%player%&r&#ffcc00!
+    &#ffcc00Сервер проекта &lKIBERmax.com
   - |-
-    &aA Minecraft Server. &7|  &eHello, &l%player%!
-    &eNow running the latest &lMinecraft &eversion!
-  - |-
-    &a&#45bf55A Minecraft &#0288d1Server.
-    &e%gradient#ffbe00#f4511e%Now with RGB colors. Hello %player%!%gradient%
+    &#55ff55&lKIBER&#00cc88mine&#aaaaaa.ru &8| &#ffcc00Привет, &l%player%&r&#ffcc00!
+    &#ffcc00Сервер проекта &lKIBERmax.com
   Players:
     Hover:
     - |-
-      &aWelcome back, &l%player%&a!
-      &aCurrently &e&l%online%/%max% &aplayers are playing on our server!
+      &#55ff55Рады тебя видеть, &l%player%&#55ff55!
+      &7Онлайн: &a%online%&7/&a%max%
+      &r
+      &#ffcc00Моды: &fMekanism, AE2, Alex's Mobs
+      &#55ccffГолосовой чат: &fSimple Voice Chat
+      &#cc88ffЭкономика: &fLightman's Currency
 
 # PlayerTracking: Enable/disable tracking of player names to their IP-Addresses.
 #   - Persistence can be disabled with the toggle in the Storage section.

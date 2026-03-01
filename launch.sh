@@ -4,6 +4,16 @@
 
 cd "$(dirname "$(readlink -fn "$0")")"
 
+# Use Java 17 (required by Mohist 1.20.1)
+if [ -x "/opt/homebrew/opt/openjdk@17/bin/java" ]; then
+    JAVA="/opt/homebrew/opt/openjdk@17/bin/java"
+elif command -v java >/dev/null 2>&1; then
+    JAVA="java"
+else
+    echo "ERROR: Java not found!"
+    exit 1
+fi
+
 # Find the server JAR (supports version updates)
 JAR_FILE=$(ls mohist-1.20.1-*.jar 2>/dev/null | head -1)
 if [ -z "$JAR_FILE" ]; then
@@ -16,10 +26,13 @@ MIN_RAM="4G"
 MAX_RAM="6G"
 
 # Launch with optimized G1GC settings
-exec java \
+exec "$JAVA" \
     -Xms${MIN_RAM} \
     -Xmx${MAX_RAM} \
+    -Dfile.encoding=UTF-8 \
+    -Dsun.jnu.encoding=UTF-8 \
     -Dlog4j.configurationFile=log4j2.xml \
+    -XX:+UnlockExperimentalVMOptions \
     -XX:+UseG1GC \
     -XX:MaxGCPauseMillis=200 \
     -XX:+ParallelRefProcEnabled \
@@ -28,7 +41,6 @@ exec java \
     -XX:G1HeapWastePercent=5 \
     -XX:+DisableExplicitGC \
     -XX:+UseStringDeduplication \
-    -XX:+UnlockExperimentalVMOptions \
     -XX:+AlwaysPreTouch \
-    -Xss256k \
+    -Xss512k \
     -jar "$JAR_FILE" nogui

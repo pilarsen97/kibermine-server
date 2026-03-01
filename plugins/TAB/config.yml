@@ -10,7 +10,7 @@ header-footer:
   footer:
   - ''
   - '&fTPS: &#fb5a00%server_tps_1_colored% &f| RAM: %server_ram_used%/%server_ram_max%'
-  - '&fДискорд: &#fb5a00https://discord.gg/KGZZpjeErq'
+  - '&fСайт: &#fb5a00kibermine.ru'
   - ''
   - ''
   disable-condition: '%world%=disabledworld'

@@ -127,23 +127,23 @@ main() {
     if ! $IMMEDIATE; then
         log_info "Starting countdown warnings..."
 
-        broadcast_message "§6[СИСТЕМА] §eПерезагрузка сервера через 10 минут!"
-        sleep 300  # 5 minutes
+        broadcast_message "§6[СИСТЕМА] §eПерезагрузка сервера через 30 секунд! Сохраните свой прогресс!"
+        sleep 20  # 30 -> 10
 
-        broadcast_message "§6[СИСТЕМА] §eПерезагрузка сервера через 5 минут! Сохраните свой прогресс!"
-        sleep 240  # 4 minutes
+        broadcast_message "§c[СИСТЕМА] §6Перезагрузка сервера через 10 секунд! Выйдите из опасных зон!"
+        sleep 5   # 10 -> 5
 
-        broadcast_message "§c[СИСТЕМА] §6Перезагрузка сервера через 1 минуту! Выйдите из опасных зон!"
-        sleep 50   # 50 seconds
-
-        broadcast_message "§c[СИСТЕМА] §4Перезагрузка через 10 секунд..."
-        sleep 10
+        # Countdown 5..1
+        for i in 5 4 3 2 1; do
+            broadcast_message "§c[СИСТЕМА] §4Перезагрузка через ${i}..."
+            sleep 1
+        done
     else
         log_info "Immediate restart requested - skipping countdown"
     fi
 
     # Final warning
-    broadcast_message "§4[СИСТЕМА] Сервер перезагружается сейчас!"
+    broadcast_message "§4[СИСТЕМА] Сервер перезагружается!"
     sleep 1
 
     # Backup (if enabled)

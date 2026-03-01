@@ -12,6 +12,8 @@ deploy/.metrics
 /plugins/BetterRTP/log.txt.lck
 /plugins/BetterRTP/data/database.db
 /plugins/LuckPerms/luckperms-h2-v2.mv.db
+/plugins/LuckPerms/luckperms-h2-v2.trace.db
+/plugins/FlectoneChat/database.db
 /plugins/FlectoneChat/database.db-wal
 /plugins/FlectoneChat/database.db-shm
 /plugins/SkinsRestorer/cache
@@ -21,9 +23,16 @@ deploy/.metrics
 usercache.json
 server.properties
 plugins/AuthMe/authme.log
+plugins/AuthMe/authme.db
 usernamecache.json
 plugins/SkinsRestorer/recommendations.json
 config/waila/waila_plugins.json5
+
+# Local tool configs
+.mcp.json
+
+# Client modpack builds
+/builds
 
 # Disabled plugins
 plugins/disabled/
